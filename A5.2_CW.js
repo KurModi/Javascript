@@ -1,71 +1,63 @@
-console.log("A5.1_CW");
+console.log("1.1","\n");
 
-console.log("--- --- ---");
-console.log("1.1")
-console.log("--- --- ---");
-
-
-for(let i=1; i<=10 ; i++){
-    console.log(i)
+for(i=10;i>=1;i--){
+    console.log(i);
 }
 
-console.log("--- --- ---");
-console.log("1.2")
-console.log("--- --- ---");
+console.log("1.2","\n");
 
-
-let pattern = ""
-for(let i=1; i<=4; i++){
-
-    pattern = pattern+"1"
-    console.log(pattern)
+for(i=10;i>=1;i--){
+    console.log("7 * " + i + " = " + i*7);
 }
 
-//row1:pattern = "1"
-//row2: pattern = "1"+"1"->11
-//row3: pattern = "11"+"1"->111
-//row4: pattern = "111"+"1"->1111
 
-console.log("--- --- ---");
-console.log("1.3")
-console.log("--- --- ---");
+console.log("1.3");
 
-let pattern1 = ""
-
-for(let i=1;i<=5;i++){
-    pattern1 = pattern1 + "a"
-    console.log(pattern1)
-}
-console.log("--- --- ---");
-console.log("1.4")
-console.log("--- --- ---");
-let numberPattern = ""
-
-for(let i=1; i<=5;i++){
-    numberPattern =( numberPattern + i)
-    console.log(numberPattern)
+for(i=4;i>=1;i--){
+    console.log(i*3);
 }
 
-// i=1: row1: numberPattern = "" +1 -> "1"
-// i=2: row2: numberPattern = "1" +1 -> "12"
-// i=3: row3: numberPattern = "2" +1 -> "123"
-// i=4: row4: numberPattern = "3" +1 -> "1234"
-// i=5: row5: numberPattern = "4" +1 -> "12345"
 
-console.log("--- --- ---");
-console.log("1.5")
-console.log("--- --- ---");
+console.log("Excercise 2");
+console.log("------------");
 
-for(let i=1; i<=10; i++){
-    let result = 2* i
-    console.log("2 * " + i + " = " + result)
+
+
+function printNumbers(n){
+
+    for(i=1;i<=n;i++){
+            console.log(i);
+    }
+
 }
 
-console.log("--- --- ---");
-console.log("1.6")
-console.log("--- --- ---");
+printNumbers(5)
 
-for(let i=1; i<=10; i++){
-    let result = i*i
-    console.log(i +" * " + i + " = " + result)
+
+console.log("2.2","\n");
+
+function printOddNumber(n){
+    for(let i=1;i<=n;i++){
+
+        if(i % 2 !== 0){
+             console.log(i);
+        }
+    }
 }
+
+printOddNumber(10,"\n")
+
+console.log("2.3","\n");
+
+
+function divisibleby5(n){
+
+    for(i=1;i<=n;i++){
+        if(i%5 === 0){
+            console.log(i);
+        }
+    }
+}
+
+divisibleby5(25)
+
